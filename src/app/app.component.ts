@@ -7,5 +7,6 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "moodapp";
-  class = "IT6203 Group7 Project";
+  class = "IT6203 Group 7 Project";
+  member = "Praneet Ahuja, Juston Bryant, Prakash Rai, Brian Shieh";
 }
