@@ -7,5 +7,5 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "moodapp";
-  class = "IT6203 Group Project";
+  class = "IT6203 Group7 Project";
 }
