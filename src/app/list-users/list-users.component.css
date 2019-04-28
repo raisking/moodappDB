@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 * {
     box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 .container {
@@ -30,7 +31,7 @@ h3, button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
+    width: 60%;
 }
 
 .userList {
@@ -38,7 +39,7 @@ h3, button {
     padding: 40px;
     background-color: #f1f2f6;
     border-bottom-right-radius: 300px;
-    border-top-right-radius: 300px;
+    /* border-top-right-radius: 300px; */
 }
 
 h1 {
@@ -90,4 +91,24 @@ span {
 .delete:hover {
     background: #f76868;
     text-decoration: none;
+}
+
+.giphy-space {
+    border: 1px solid rgb(78, 77, 77);
+    width: 200px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+    .userList {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+        padding: 40px;
+        background-color: #f1f2f6;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+    }
 }

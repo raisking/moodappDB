@@ -3,9 +3,9 @@
     <ul *ngFor="let student of students let i = index">
       <li class="userList">
         <ul>
-          <li>
+          <!-- <li>
             <span>(index {{i}})</span>
-          </li>
+          </li> -->
           <li>ID: <span>{{student._id}}</span></li>
           <li>
             First Name: <span>{{student.firstName}}</span>
@@ -23,11 +23,13 @@
         <button class='update' mat-button color="accent" [routerLink]="['/editUser', student._id]">Update</button>
         <button class='update' mat-button color="accent" [routerLink]="['/activities']">Things to
           do..</button>
-
+        <hr>
+        <div class='giphy-space'>Giphy</div>
       </li>
 
     </ul>
 
   </div>
+
 
 </div>
