@@ -21,6 +21,7 @@ import { NewUsersComponent } from './new-users/new-users.component';
 import { NewUserFormComponent } from './new-user-form/new-user-form.component';
 import { DefaultComponent } from './default/default.component';
 import { FoodComponent } from './food/food.component';
+import { GiphyComponent } from './giphy/giphy.component';
 
 const appRoutes: Routes = [{
   path: '',                     //default component to display
@@ -59,7 +60,8 @@ const appRoutes: Routes = [{
     NewUsersComponent,
     NewUserFormComponent,
     DefaultComponent,
-    FoodComponent
+    FoodComponent,
+    GiphyComponent
   ],
   imports: [
     BrowserModule,
