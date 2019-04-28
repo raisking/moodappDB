@@ -20,6 +20,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NewUsersComponent } from './new-users/new-users.component';
 import { NewUserFormComponent } from './new-user-form/new-user-form.component';
 import { DefaultComponent } from './default/default.component';
+import { FoodComponent } from './food/food.component';
 
 const appRoutes: Routes = [{
   path: '',                     //default component to display
@@ -34,7 +35,12 @@ const appRoutes: Routes = [{
 }, {
   path: 'listUsers',       //when students listed
   component: ListUsersComponent
-}, {
+},
+{
+  path: 'activities',       //when students listed
+  component: ActivitiesComponent
+},
+{
   path: '**',                 //when path cannot be found
   component: NotFoundComponent
 }
@@ -52,7 +58,8 @@ const appRoutes: Routes = [{
     NotFoundComponent,
     NewUsersComponent,
     NewUserFormComponent,
-    DefaultComponent
+    DefaultComponent,
+    FoodComponent
   ],
   imports: [
     BrowserModule,
