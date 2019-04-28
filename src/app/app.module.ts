@@ -34,7 +34,12 @@ const appRoutes: Routes = [{
 }, {
   path: 'listUsers',       //when students listed
   component: ListUsersComponent
-}, {
+},
+{
+  path: 'activities',       //when students listed
+  component: ActivitiesComponent
+},
+{
   path: '**',                 //when path cannot be found
   component: NotFoundComponent
 }
