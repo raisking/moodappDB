@@ -10,3 +10,4 @@ export class AppComponent {
   class = "IT6203 Group 7 Project";
   member = "Praneet Ahuja, Juston Bryant, Prakash Rai, Brian Shieh";
 }
+

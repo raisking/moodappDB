@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+button {
+    background-color: transparent;
+    border: transparent;
+}
+
+.menu {
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+span {
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    font-weight: bold;
+}
