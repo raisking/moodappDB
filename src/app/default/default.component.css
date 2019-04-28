@@ -75,3 +75,12 @@
     margin-right: auto;
     margin-bottom: 33px;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100pc;
+    background-color:blue;
+    color: white;
+    text-align: center;
+ }
