@@ -6,22 +6,75 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+   
 }
 
 .main {
     display: flex;
     font-family: 'Righteous', cursive;
     padding: 50px;
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .flexBox {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     padding: 20px;
     background-color: #f1f2f6;
-    margin: 5px;
+    margin: 10px;
 }
+
+
+
+.center {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.juston {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+}
+.brian {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+}
+.praneet {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+}
+.prakash {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 33px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100pc;
+    background-color:blue;
+    color: white;
+    text-align: center;
+ }
