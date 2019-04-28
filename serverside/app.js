@@ -65,7 +65,8 @@ app.post('/users', (req, res, next) => {
     const user = new User({
         firstName: req.body.firstName, // getting from httprequest
         lastName: req.body.lastName,
-        mood: req.body.mood
+        mood: req.body.mood,
+        note: req.body.note
     });
     //send the document to the database 
     user.save()
@@ -99,7 +100,9 @@ app.put('/users/:id', (req, res, next) => {
                 $set: {
                     firstName: req.body.firstName,
                     lastName: req.body.lastName,
-                    mood: req.body.mood
+                    mood: req.body.mood,
+                    note: req.body.note
+
                 }
             }, { new: true })
             .then((student) => {

@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
-  mood: { type: String, required: true }
+  mood: { type: String, required: true },
+  note: { type: String, required: true }
 });
 
 //use the blueprint to create the model 

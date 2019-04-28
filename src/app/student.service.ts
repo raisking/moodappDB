@@ -16,8 +16,8 @@ export class StudentService {
     }
 
     // Uses http.post() to post data 
-    addUsers(firstName: string, lastName: string, mood: string) {
-        this.http.post('http://localhost:8000/users', { firstName, lastName, mood })
+    addUsers(firstName: string, lastName: string, mood: string, note: string) {
+        this.http.post('http://localhost:8000/users', { firstName, lastName, mood, note })
             .subscribe((responseData) => {
                 console.log(responseData);
             });
@@ -32,11 +32,11 @@ export class StudentService {
         location.reload();
     }
 
-    updateUser(studentId: string, firstName: string, lastName: string, mood: string) {
+    updateUser(studentId: string, firstName: string, lastName: string, mood: string, note: string) {
         //request path http://localhost:8000/students/5xbd456xx 
         //first and last names will be send as HTTP body parameters 
         this.http.put("http://localhost:8000/users/"
-            + studentId, { firstName, lastName, mood })
+            + studentId, { firstName, lastName, mood, note })
             .subscribe(() => {
                 console.log('Updated: ' + studentId);
             });

@@ -6,7 +6,7 @@
           <!-- <li>
             <span>(index {{i}})</span>
           </li> -->
-          <li>ID: <span>{{student._id}}</span></li>
+          <!-- <li>ID: <span>{{student._id}}</span></li> -->
           <li>
             First Name: <span>{{student.firstName}}</span>
           </li>
@@ -17,7 +17,9 @@
           <li>
             Mood: <span>{{student.mood}}</span>
           </li>
-
+          <li>
+            Note: <span>{{student.note}}</span>
+          </li>
         </ul>
         <button class='delete' mat-button color="warn" (click)="onDelete(student._id)">Delete</button>
         <button class='update' mat-button color="accent" [routerLink]="['/editUser', student._id]">Update</button>

@@ -13,16 +13,18 @@ export class NewAppFormComponent implements OnInit {
   @Input() firstName: string;
   @Input() lastName: string;
   @Input() mood: string;
+  @Input() note: string;
+
   private mode = 'add'; //default mode
   private id: string; //student ID
 
 
   onSubmit() {
-    console.log("You submitted: " + this.firstName + " " + this.lastName + "" + this.mood);
+    console.log("You submitted: " + this.firstName + " " + this.lastName + "" + this.mood + "" + this.note);
     if (this.mode == 'add')
-      this._myService.addUsers(this.firstName, this.lastName, this.mood);
+      this._myService.addUsers(this.firstName, this.lastName, this.mood, this.note);
     if (this.mode == 'edit')
-      this._myService.updateUser(this.id, this.firstName, this.lastName, this.mood);
+      this._myService.updateUser(this.id, this.firstName, this.lastName, this.mood, this.note);
 
     this.router.navigate(['/listUsers']);
   }
