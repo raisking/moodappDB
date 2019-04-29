@@ -6,10 +6,26 @@
 </div>
 <h1>
   Welcome to {{ title }}!
+  <hr>
+  <!-- <input type="text" (keyup)="onNameKeyUp($event)">
+  <button (click)="getProfile()">Get Profile</button>
+  <br>
+  <div *ngIf="found">
+    <span>{{name}} is {{age}} and his {{id}}</span>
+  </div> -->
+
+  <hr>
+  <input type="text" (keyup)="onNameKeyUp($event)">
+  <button (click)="getGiphy()">Get Giphy</button>
+  <br>
+  <div *ngIf="found">
+    <span>{{url}}</span>
+  </div>
 </h1>
 <div class="content">
   <router-outlet></router-outlet>
 </div>
+
 
 
 
