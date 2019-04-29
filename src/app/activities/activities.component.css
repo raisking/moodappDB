@@ -1,6 +1,11 @@
 .container {
-    border: 1px solid black;
-    width: 300px;
+    /* border: 1px solid black; */
+    /* width: 300px; */
     margin-left: auto;
     margin-right: auto;
+}
+
+li {
+    color: chocolate;
+    font-size: 1.5em;
 }

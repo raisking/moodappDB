@@ -14,6 +14,7 @@ export class AppComponent {
 
   name: string = '';
   giphy: string = '';
+  data: [];
   images: [];
   fixed_width: [];
   url: string;
@@ -34,7 +35,9 @@ export class AppComponent {
       .subscribe(
         (data: any[]) => {
 
+
           console.log(data);
+
 
 
         }
