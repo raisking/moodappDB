@@ -1,43 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 .container {
     font-family: 'Righteous', cursive;
-    padding: 50px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+.logo {
+    position: relative;
+    top: -50px;
 }
 
 .main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     font-family: 'Righteous', cursive;
-    padding: 50px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .flexBox {
-    width: 100px;
-    height: 150px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    padding: 20px;
-    /* background-color: rgb(64, 104, 216); */
-    margin: 10px;
+    background-color: #dfe6e9;
+    width: 150px;
+    height: 174px;
+    border: 2px solid rgb(112, 110, 110);
+}
+
+.flexBox div {
+    background-color: #74b9ff;
+    height: 33px;
+    position: relative;
+    bottom: 33px;
 }
 
 .center {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.juston {
-    width: 90px;
-    height: 90px;
+.juston, .brian, .prakash, .praneet {
+    width: 150px;
+    height: 140px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,38 +58,12 @@
     margin: 0;
 }
 
-.brian {
-    width: 90px;
-    height: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 33px;
-}
-
-.praneet {
-    width: 90px;
-    height: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 22px;
-}
-
-.prakash {
-    width: 90px;
-    height: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 33px;
-}
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100pc;
-    background-color:blue;
+    background-color: #ccc;
     color: white;
     text-align: center;
- }
+}
