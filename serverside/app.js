@@ -13,9 +13,9 @@ const User = require('./models/user')
 
 
 // connect to the MONGODB ATLAS and display the status 
-// const uri = "mongodb+srv://prai:Dikhuppa123@it6203-plblu.mongodb.net/test?retryWrites=true";
-const uri = "mongodb+srv://it6203:kennesawstate1!@cluster0-divzh.mongodb.net/test?retryWrites=true";
-// const uri = "mongodb+srv://it6203:kennesawstate!@cluster0-divzh.mongodb.net/test?retryWrites=true";
+// const uri = "mongodb+srv://prai:<PASSWORD>@it6203-plblu.mongodb.net/test?retryWrites=true";
+const uri = "mongodb+srv://it6203:<PASSWORD>@cluster0-divzh.mongodb.net/test?retryWrites=true";
+
 
 mongoose.connect(uri, { useNewUrlParser: true })
     .then(() => { console.log("connected"); })
